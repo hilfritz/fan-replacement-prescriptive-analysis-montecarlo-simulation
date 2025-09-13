@@ -8,6 +8,7 @@
 - [Policy Key Performance Indicators (KPIs)](#policy-key-performance-indicators-kpis)
 - [Monte Carlo Simulation Implementation](#monte-carlo-simulation-implementation)
 - [How To Use](#how-to-use)
+- [Results & Recommendation](#results--recommendations)
 
 ## Monte Carlo simulation
 **What is Monte Carlo simulation?** </br>
@@ -74,7 +75,7 @@ The simulation was implemented as an **event-driven Monte Carlo model**:
 - **Repetition:** Multiple runs (e.g., 500) were executed to ensure stable averages and reliable KPIs.
 
 ## How To Use
-Monte Carlo Simulation is implemented with Python and Jupyter Notebook so the prerequisite for the project to run is Jupyter and Python are already installed.
+This section shows how the project is structured and how to use to properly run the simulation. The Monte Carlo Simulation is implemented with Python and Jupyter Notebook so the prerequisite for the project to run is Jupyter and Python are already installed.
 
 ### Repository Structure
 - `montecarlo-notebook.ipynb` → Python simulation implementation  
@@ -112,4 +113,24 @@ pip install numpy pandas matplotlib kagglehub
 4. **Outputs include:**  
    - Per-event breakdowns of Fan, Labor, and Downtime costs.  
    - Per-run aggregates (total cost, downtime, operating horizon).  
-   - KPI summaries comparing Current vs Proposed policies.  
+   - KPI summaries comparing Current vs Proposed policies.
+
+## Results & Recommendation
+- **Current Policy (V1):** Mean Total Cost ≈ $21,108  
+- **Proposed Policy (V2):** Mean Total Cost ≈ $11,563  
+- **Savings:** ~45% lower under Proposed Policy  
+- **Key Driver:** Major reduction in downtime costs  
+
+**Recommendation:** Adopt the **Proposed Policy (V2)** — it delivers significant cost savings, more predictable performance, and reduced downtime.  
+
+📓 *Note:* The **Jupyter Notebook (`montecarlo-notebook.ipynb`)** contains the full simulation outputs, including figures, event-level data, KPI breakdowns, and supporting analysis.
+
+
+<!--
+## 👥 Team
+Group 6 – Prescriptive Analytics, University of Niagara Falls Canada  
+- Hilfritz Camallere  
+- Tiago Caramello Ceolato  
+- Daniyal Nadeem Khan  
+- Bruno Sassi
+--> 
