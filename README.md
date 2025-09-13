@@ -7,7 +7,7 @@
 - [Variables & Distributions](#variables--distributions)
 - [Policy Key Performance Indicators (KPIs)](#policy-key-performance-indicators-kpis)
 - [Monte Carlo Simulation Implementation](#monte-carlo-simulation-implementation)
-  - [How To Use The Code](#how-to-use-the-code)
+- [How To Use The Repository](#how-to-use-the-repository)
 
 ## Monte Carlo simulation
 **What is Monte Carlo simulation?** </br>
@@ -73,10 +73,10 @@ The simulation was implemented as an **event-driven Monte Carlo model**:
   - Record per-event and per-run costs (Fan, Labor, Downtime).  
 - **Repetition:** Multiple runs (e.g., 500) were executed to ensure stable averages and reliable KPIs.
 
-### How To Use The Code
-Simulation uses Python and Jupyter Notebook. To run the Python simulation, ensure you have the following installed:
+## How To Use The Repository
+Simulation uses Python and Jupyter Notebook so the prerequisite for the project to run is Jupyter and Python are already installed.
 
-Requirements:
+Python Library Requirements:
 ```bash
 python >= 3.9
 numpy
