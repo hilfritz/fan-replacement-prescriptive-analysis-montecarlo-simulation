@@ -8,7 +8,7 @@
 
 ## Monte Carlo simulation
 **What is Monte Carlo simulation?** </br>
-- Monte Carlo simulation is a tool used in descriptive, predictive tool, and prescriptive analytics by providing decision-makers a way to compare stratigies (in this case Policies) under uncertainty.
+- Monte Carlo simulation is a tool used in descriptive, predictive tool, and prescriptive analytics. In Predictive Analysis it helps by providing decision-makers a way to compare stratigies (in this case Policies) under uncertainty.
 - It is a technique that uses repeated random sampling of data to estimate the probability of different outcomes in a process that cannot easily be predicteddue to uncertainty.
 - In this project, it is used to prescribe the most cost-effective cooling fan replacement policy for the data center.  
 
