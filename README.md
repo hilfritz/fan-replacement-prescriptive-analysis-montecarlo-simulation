@@ -5,6 +5,7 @@
 - [Problem Definition](#problem-definition)
 - [Objective](#objective)
 - [Variables & Distributions](#variables--distributions)
+- [Policy Key Performance Indicators (KPIs)](#policy-key-performance-indicators-kpis)
 
 ## Monte Carlo simulation
 **What is Monte Carlo simulation?** </br>
@@ -43,13 +44,13 @@ The objective is to determine which policy minimizes total costs, using **Monte 
 
 To evaluate the effectiveness of the two fan replacement policies, the following KPIs were measured:
 
-### 💰 Cost KPIs
+### Cost KPIs
 - **Total Cost ($):** Overall economic outcome, the primary decision-making metric.  
 - **Cost Breakdown ($):** Separate reporting of Fan, Labor, and Downtime costs.  
 - **Cost Variability:** Standard deviation of Total Cost across multiple simulation runs (predictability).  
 - **Mean Cost per Time:** Ratio of total cost to operational time, normalizing cost efficiency.
 
-### ⚙️ Reliability & Operations KPIs
+### Reliability & Operations KPIs
 - **Cumulative Downtime (hrs):** Total server unavailability until 45 fans are replaced.  
 - **Operating Horizon (hrs):** Elapsed time to reach 45 fan replacements.  
 - **Convergence Diagnostics:** Tracking of mean and standard deviation of Total Cost across runs to confirm sufficient simulation repetitions.
