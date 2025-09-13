@@ -1,5 +1,5 @@
 # Cooling Fan Replacement Policy – Prescriptive Analysis 
-- Determine the best policy to minimizes cost using Monte Carlo Simulation
+
 ## Table of Contents
 - [Monte Carlo Simulation](#monte-carlo-simulation)
 - [Problem Definition](#problem-definition)
