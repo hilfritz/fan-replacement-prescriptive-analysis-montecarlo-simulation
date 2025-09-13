@@ -1,9 +1,23 @@
 # Cooling Fan Replacement Policy – Prescriptive Analysis 
 - Determine the best policy to minimizes cost using Monte Carlo Simulation
 ## Table of Contents
+- [Monte Carlo Simulation](#monte-carlo-simulation)
 - [Problem Definition](#problem-definition)
 - [Objective](#objective)
 - [Variables & Distributions](#variables--distributions)
+
+** Monte Carlo simulation** is a computational technique that uses repeated random sampling to
+estimate the probability of different outcomes in a process that cannot easily be predicted
+due to uncertainty.  
+It is widely applied in decision-making and risk analysis because it allows us to model
+complex systems, incorporate randomness, and assess the range of possible results.  
+
+Monte Carlo simulation is not only a descriptive or predictive tool,  
+it also supports **prescriptive analytics** by enabling decision-makers  
+to compare alternative strategies under uncertainty.  
+In this project, it is used to prescribe the most cost-effective cooling  
+fan replacement policy for the data center.  
+
 
 ## Problem Definition
 A data center relies on a server rack cooled by **three identical fans**.  
