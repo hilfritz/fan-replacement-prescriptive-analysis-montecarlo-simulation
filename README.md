@@ -1,9 +1,9 @@
 # Cooling Fan Replacement Policy – Prescriptive Analysis 
 - Determine the best policy to minimizes cost using Monte Carlo Simulation
 ## Table of Contents
-- [Problem Definition](#-problem-definition)
-- [Objective](#-objective)
-- [Variables & Distributions](#-variables--distributions)
+- [Problem Definition](#problem-definition)
+- [Objective](#objective)
+- [Variables & Distributions](#variables--distributions)
 
 ## Problem Definition
 A data center relies on a server rack cooled by **three identical fans**.  
