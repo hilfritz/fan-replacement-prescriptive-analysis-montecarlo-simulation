@@ -6,6 +6,8 @@
 - [Objective](#objective)
 - [Variables & Distributions](#variables--distributions)
 - [Policy Key Performance Indicators (KPIs)](#policy-key-performance-indicators-kpis)
+- [Monte Carlo Simulation Implementation](#monte-carlo-simulation-implementation)
+  - [Code Setup & Requirements](#code-setup--requirements)
 
 ## Monte Carlo simulation
 **What is Monte Carlo simulation?** </br>
@@ -57,3 +59,18 @@ To evaluate the effectiveness of the two fan replacement policies, the following
 
 These KPIs provide both financial and operational insights, showing not only which policy is cheaper, but also how stable, predictable, and reliable it is under uncertainty.
 
+## Monte Carlo Simulation Implementation
+The simulation was implemented as an **event-driven Monte Carlo model**:  
+- **Random inputs:**  
+  - Fan lifetimes sampled from discrete distribution (1,000–1,900 hrs).  
+  - Technician delays sampled from distribution (20, 30, 45 mins).  
+- **Policy rules:**  
+  - **Current Policy (V1):** Replace only failed fan.  
+  - **Proposed Policy (V2):** Replace all three fans whenever one fails.  
+- **Simulation loop:**  
+  - Continue until **45 fans replaced**.  
+  - Record per-event and per-run costs (Fan, Labor, Downtime).  
+- **Repetition:** Multiple runs (e.g., 500) were executed to ensure stable averages and reliable KPIs.
+
+### Code Setup & Requirements
+Simulation uses Python and Jupyter Notebook. To run the Python simulation, ensure you have the following installed:
