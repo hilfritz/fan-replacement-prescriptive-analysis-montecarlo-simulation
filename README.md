@@ -6,17 +6,11 @@
 - [Objective](#objective)
 - [Variables & Distributions](#variables--distributions)
 
-** Monte Carlo simulation** is a computational technique that uses repeated random sampling to
-estimate the probability of different outcomes in a process that cannot easily be predicted
-due to uncertainty.  
-It is widely applied in decision-making and risk analysis because it allows us to model
-complex systems, incorporate randomness, and assess the range of possible results.  
-
-Monte Carlo simulation is not only a descriptive or predictive tool,  
-it also supports **prescriptive analytics** by enabling decision-makers  
-to compare alternative strategies under uncertainty.  
-In this project, it is used to prescribe the most cost-effective cooling  
-fan replacement policy for the data center.  
+## Monte Carlo simulation
+**What is Monte Carlo simulation?** </br>
+- Monte Carlo simulation is a tool used in descriptive, predictive tool, and prescriptive analytics by providing decision-makers a way to compare stratigies (in this case Policies) under uncertainty.
+- It is a technique that uses repeated random sampling of data to estimate the probability of different outcomes in a process that cannot easily be predicteddue to uncertainty.
+- In this project, it is used to prescribe the most cost-effective cooling fan replacement policy for the data center.  
 
 
 ## Problem Definition
@@ -29,8 +23,6 @@ Two policies were evaluated:
 
 ## Objective
 The objective is to determine which policy minimizes total costs, using **Monte Carlo simulation** in **Python**.
-
----
 
 ## Variables & Distributions
 - **Fan Lifetime (hrs)**: Discrete distribution between **1,000 – 1,900 hrs** with varying probabilities.  
