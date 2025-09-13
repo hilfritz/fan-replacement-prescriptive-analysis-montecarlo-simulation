@@ -123,6 +123,7 @@ pip install numpy pandas matplotlib kagglehub
 
 **Recommendation:** Adopt the **Proposed Policy (V2)** — it delivers significant cost savings, more predictable performance, and reduced downtime.  
 
+<br/></br></br>
 📓 *Note:* The **Jupyter Notebook (`montecarlo-notebook.ipynb`)** contains the full simulation outputs, including figures, event-level data, KPI breakdowns, and supporting analysis.
 
 
