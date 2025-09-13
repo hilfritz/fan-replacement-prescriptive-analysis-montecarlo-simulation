@@ -7,7 +7,7 @@
 - [Variables & Distributions](#variables--distributions)
 - [Policy Key Performance Indicators (KPIs)](#policy-key-performance-indicators-kpis)
 - [Monte Carlo Simulation Implementation](#monte-carlo-simulation-implementation)
-  - [Code Setup & Requirements](#code-setup--requirements)
+  - [How To Use The Code](#how-to-use-the-code)
 
 ## Monte Carlo simulation
 **What is Monte Carlo simulation?** </br>
@@ -19,13 +19,14 @@
 ## Problem Definition
 A data center relies on a server rack cooled by **three identical fans**.  
 When a fan fails, the server shuts down and requires technician intervention.  
+  
+  Two policies were evaluated:  
+  - **Current Policy (V1):** Replace only the failed fan.  
+  - **Proposed Policy (V2):** Replace all three fans whenever one fails.  
 
-Two policies were evaluated:  
-- **Current Policy (V1):** Replace only the failed fan.  
-- **Proposed Policy (V2):** Replace all three fans whenever one fails.  
 
 ## Objective
-The objective is to determine which policy minimizes total costs, using **Monte Carlo simulation** in **Python**.
+- The objective is to determine which policy minimizes total costs, using **Monte Carlo simulation** in **Python**.
 
 ## Variables & Distributions
 - **Fan Lifetime (hrs)**: Discrete distribution between **1,000 – 1,900 hrs** with varying probabilities.  
@@ -72,5 +73,38 @@ The simulation was implemented as an **event-driven Monte Carlo model**:
   - Record per-event and per-run costs (Fan, Labor, Downtime).  
 - **Repetition:** Multiple runs (e.g., 500) were executed to ensure stable averages and reliable KPIs.
 
-### Code Setup & Requirements
+### How To Use The Code
 Simulation uses Python and Jupyter Notebook. To run the Python simulation, ensure you have the following installed:
+
+Requirements:
+```bash
+python >= 3.9
+numpy
+pandas
+matplotlib
+```
+
+Install them with:
+```bash
+pip install numpy pandas matplotlib kagglehub
+```
+
+### Running the Code
+
+1. **Clone this repository**  
+   ```bash
+   git clone https://github.com/hilfritz/fan-replacement-prescriptive-analysis-montecarlo-simulation.git
+   cd fan-replacement-prescriptive-analysis-montecarlo-simulation
+   ```
+
+2. **Open Jupyter Notebook**  
+   ```bash
+   jupyter notebook montecarlo-notebook.ipynb
+   ```
+
+3. **Run all cells** to simulate both policies.  
+
+4. **Outputs include:**  
+   - Per-event breakdowns of Fan, Labor, and Downtime costs.  
+   - Per-run aggregates (total cost, downtime, operating horizon).  
+   - KPI summaries comparing Current vs Proposed policies.  
