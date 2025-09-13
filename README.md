@@ -126,6 +126,10 @@ pip install numpy pandas matplotlib kagglehub
 📓 *Note:* The **Jupyter Notebook (`montecarlo-notebook.ipynb`)** contains the full simulation outputs, including figures, event-level data, KPI breakdowns, and supporting analysis.
 
 
+## Author
+Hilfritz Camallere
+A simple project to showcase Prescriptive Analysis to demonstrate use of Monte Carlo Simulation to identify optimal policy to save cost on fan replacements.
+
 <!--
 ## 👥 Team
 Group 6 – Prescriptive Analytics, University of Niagara Falls Canada  
