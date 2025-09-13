@@ -1,1 +1,34 @@
-# Fan Replacement Predictive Analysis using Montecarlo Simulation
+# Cooling Fan Replacement Policy – Prescriptive Analysis 
+- Determine the best policy to minimizes cost using Monte Carlo Simulation
+## Table of Contents
+- [Problem Definition](#-problem-definition)
+- [Objective](#-objective)
+- [Variables & Distributions](#-variables--distributions)
+
+## Problem Definition
+A data center relies on a server rack cooled by **three identical fans**.  
+When a fan fails, the server shuts down and requires technician intervention.  
+
+Two policies were evaluated:  
+- **Current Policy (V1):** Replace only the failed fan.  
+- **Proposed Policy (V2):** Replace all three fans whenever one fails.  
+
+## Objective
+The objective is to determine which policy minimizes total costs, using **Monte Carlo simulation** in **Python**.
+
+---
+
+## Variables & Distributions
+- **Fan Lifetime (hrs)**: Discrete distribution between **1,000 – 1,900 hrs** with varying probabilities.  
+- **Technician Arrival Delay (min)**:  
+  - 20 → 60%  
+  - 30 → 30%  
+  - 45 → 10%  
+- **Costs**:  
+  - Fan = **$32/unit**  
+  - Downtime = **$10/minute**  
+  - Labor = **$30/hour**  
+- **Replacement Times**:  
+  - 1 fan → 20 min  
+  - 2 fans → 30 min  
+  - 3 fans → 40 min  
